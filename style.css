@@ -6,18 +6,17 @@
     font-style: normal;
 }
 
-:root {
-    box-sizing: border-box;
-}
-
 body {
     margin: 0;
     padding: 0;
     display: flex;
+    box-sizing: border-box;
 }
+
 /* sidebar */
 #leaf {
    width: 500px;
+   height: 155vh;
 }
 
 .logo {
@@ -52,7 +51,7 @@ body {
 }
 /* opening text */
 .heading {
-    padding: 130px 75px 35px 50px;
+    padding: 130px 75px 30px 50px;
     font-size: 24px;
     font-weight: 600;
     line-height: 1.3;
@@ -60,23 +59,27 @@ body {
 }
 
 .head {
-    margin-top: 23px;
-    margin-bottom: 0;
+    margin: 23px 0 0 0;   
 }
 
 .end {
     margin: 0;
 }
+
+.line {
+    padding-bottom: 35px;
+}
 /* form */
 legend {
     font-size: 26px;
     padding-bottom: 20px;
-    font-weight: 600;
+    font-weight: 400;
+    padding-top: 10px;
 }
 
 form {
     background-color: white;
-    padding: 25px 75px 30px 50px;
+    padding: 0 75px 0 50px;    
 }
 
 .box {
@@ -95,10 +98,11 @@ input {
 }
 
 input:focus {
+    outline: none;
     border: 3px solid lightblue;
 }
 
-#pwd, #confirm {
+#pwd:invalid, #confirm:invalid {
     border: 1px solid red;
 }
 .right-label {
@@ -116,4 +120,29 @@ input:focus {
 
 label {
     font-size: 12px;
+}
+/* footer section */
+.footer {
+    background-color: rgba(229, 231, 235, 0.4);
+    padding: 25px 75px 175px 50px;
+
+}
+
+button {
+    background-color: #596D48;
+    padding: 15px 60px;
+    border-radius: 10px;
+    color: white;
+    font-size: 18px;
+}
+    
+a {
+    color: #596D48;
+    text-decoration: none;
+}
+
+.footer > p {
+   font-size: 18px;
+   font-weight: 400; 
+   padding-top: 25px;
 }
